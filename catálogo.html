@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!--Fuente-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Iconos-->  
+</head>
+
+<body>
+    
+    <!-- Barra de navegación (BOOTSTRAP).-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <strong>TIENDA VERDE</strong>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown"> 
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="catálogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Solicitud</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav> 
+    
+    <div class = "Carrito">
+      <a href="#" class="btn btn-primary" id = "botonCarrito"><i class="bi bi-cart fs-3" id = "cartIcon"></i></a>
+    </div>
+    
+    <!-- Catálogo de productos (CARDS)-->  
+    <p class = "textCatálogo">Catálogo de Productos</p>
+
+    <div class = "productos"> 
+      <div class="row row-cols-2 row-cols-md-3 g-2" id = "productRows">
+          <div class="col">
+            <div class="card">
+              <img src="https://st3.depositphotos.com/14787348/37011/i/450/depositphotos_370113786-stock-photo-recycled-paper-shopping-bag-white.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bolsas (5 u.)</h5>
+                <h5 class="price">$2.000</h5>
+                <a  class="btn btn-primary addProduct">Añadir al Carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://cdnx.jumpseller.com/rutina-sustentable/image/11294499/thumb/540/540?1649811496" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cepillo de dientes</h5>
+                <h5 class="price">$2.500</h5>
+                <a  class="btn btn-primary addProduct">Añadir al Carrito</a>    
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://www.weltunvidasustentable.cl/cdn/shop/products/39_cfb2aa81-0781-4898-9f36-6f72be4b3227_720x.png?v=1654629004" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Estuche de algodón</h5>
+                <h5 class="price">$1.800</h5>
+                <a  class="btn btn-primary addProduct">Añadir al Carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="https://www.bionaticspain.com/wp-content/uploads/2020/05/DFC01346_web_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Envases (10 u.)</h5>
+                <h5 class="price">$2.000</h5>
+                <a  class="btn btn-primary addProduct">Añadir al Carrito</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                <img src="https://todoplas.uy/cdn/shop/products/cubiertos-de-madera-ecologicos-compostables-todoplasuy_2048x.png?v=1671281812" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Set 4 Cubiertos</h5>
+                  <h5 class="price">$100</h5>
+                  <a  class="btn btn-primary addProduct">Añadir al Carrito</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://empaquesustentable.com/cdn/shop/files/13_1200x.png?v=1692212916" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vasos (50 u.)</h5>
+                  <h5 class="price">$2.700</h5>
+                  <a  class="btn btn-primary addProduct">Añadir al Carrito</a>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+
+<!--LINKS para uso de bootstrap.-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script> 
+
+</body>
+
+</html>

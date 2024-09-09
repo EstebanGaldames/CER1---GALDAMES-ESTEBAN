@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!--Fuente-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--Iconos-->
+</head>
+
+<body>
+    <!-- Barra de navegación (BOOTSTRAP).-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <strong>TIENDA VERDE</strong>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catálogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Solicitud</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <p class = "textDestacado">Productos destacados</p>
+      
+      <!-- Carrusel de imágenes (Bootstrap).-->
+      <div id = "destacados">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.verdementa.es/media/products/b/o/bolsa-non-woven-resistente-7kg-marron.jpg" class="d-block w-100" alt="Bolsa ecologica">
+              <div class="carousel-caption d-none d-md-block" id = "Descripcion">
+                <h5 class = "producTitulo">Bolsa Ecológica</h5>
+                <p class = "producDescp">Más vendido</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://ceroplas.cl/cdn/shop/products/vasocompostablemarron_2048x2048.jpg?v=1660166020">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class = "producTitulo" >Vasos</h5>
+                <p class = "producDescp">Más vendido</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://static.vecteezy.com/system/resources/previews/006/663/121/non_2x/wooden-cutlery-single-use-eco-friendly-isolated-on-white-background-with-clipping-path-free-photo.jpg" class="d-block w-100" alt="Destacado3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class = "producTitulo">Cubiertos</h5>
+                <p class = "producDescp">Más vendido</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <p class = "infTitulo"> ¿Quiénes somos?</p>
+      <p class = "infTienda p-5">Nosotros somos una pequeña empresa local comprometida con la venta de productos ecológicos y sostenibles. Nuestra misión es ofrecer a la comunidad alternativas responsables que respeten el medio ambiente, promoviendo un estilo de vida más saludable y consciente. En Tienda Verde, se puede encontrar una amplia variedad de productos, desde alimentos orgánicos y cosmética natural hasta utensilios eco-amigables, todo seleccionado con el objetivo de reducir el impacto ambiental. Apostando por la calidad y la sostenibilidad, la empresa busca ser un referente en el mercado local para quienes desean consumir de manera más ética y respetuosa con el planeta.</p>
+
+<!--LINKS para uso de bootstrap.-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
