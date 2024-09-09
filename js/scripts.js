@@ -1,18 +1,18 @@
-/*Función que hace elegir las subcategorías*/
+// Función que hace elegir las subcategorías.
 document.addEventListener('DOMContentLoaded', function() {
     const selectMaterial = document.getElementById('material');
     
-    // Obtener todas las secciones de opciones
+    // Obtengo todas las secciones de opciones.
     const opcionesMaterial = document.querySelectorAll('.material-options');
   
-    // Evento que detecta cuando cambia la selección del material
+    // "Evento" que detecta cuando cambia la selección del material.
     selectMaterial.addEventListener('change', function() {
-      // Ocultar todas las opciones
+      // Ocultar todas las opciones.
       opcionesMaterial.forEach(function(option) {
         option.style.display = 'none';
       });
   
-      // Mostrar la sección correcta basada en la selección
+      // Mostrar la sección correcta basada en la selección.
       const selectedValue = selectMaterial.value;
       if (selectedValue) {
         const selectedOption = document.getElementById(selectedValue);
@@ -23,37 +23,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Función que valida todos los campos del formulario.
   document.addEventListener("DOMContentLoaded", function() {
-    const errorDiv = document.getElementById("error-messages");
-
-    const nombres = document.getElementById("nombres");
-    const correo = document.getElementById("correo");
-    const direccion = document.getElementById("direccion");
+    // Obtengo las constantes por el id.
+    const errorDiv    = document.getElementById("error-messages");
+    const nombres     = document.getElementById("nombres");
+    const correo      = document.getElementById("correo");
+    const direccion   = document.getElementById("direccion");
     const cantidadRes = document.getElementById("cantidadRes");
-    const material = document.getElementById("material");
-    const btnEnviar = document.getElementById("btn-enviar");
+    const material    = document.getElementById("material");
+    const btnEnviar   = document.getElementById("btn-enviar");
 
-    // Validar cuando el usuario hace clic en el botón "Enviar"
+    // Valido cuando el usuario hace clic en el botón "Enviar".
     btnEnviar.addEventListener("click", function(event) {
-        event.preventDefault();  // Evitar el envío del formulario
+        event.preventDefault();  // Evitar el envío del formulario.
 
         let isValid = true;
-        errorDiv.innerHTML = "";  // Limpiar mensajes de error previos
+        errorDiv.innerHTML = "";  // Limpiar mensajes de error previos.
 
-        // Validar todos los campos
+        // Valido todos los campos
         if (!validateNombre()) isValid = false;
         if (!validateCorreo()) isValid = false;
         if (!validateDireccion()) isValid = false;
         if (!validateCantidad()) isValid = false;
         if (!validateMaterial()) isValid = false;
 
-        // Si todo es válido, mostrar un mensaje de éxito
+        // Si todo es válido, muestro un mensaje de éxito.
         if (isValid) {
             errorDiv.innerHTML = "<span style='color: green;'>Formulario enviado correctamente!</span>";
         }
     });
 
-    // Función para validar el nombre
+    // Función para validar el nombre.
     function validateNombre() {
         const value = nombres.value.trim();
         if (value === "") {
@@ -63,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return true;
     }
 
-    // Función para validar el correo
+    // Función que valida el correo.
     function validateCorreo() {
         const value = correo.value.trim();
         if (value === "") {
@@ -76,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return true;
     }
 
-    // Función para validar la dirección
+    // Función que valida la dirección.
     function validateDireccion() {
         const value = direccion.value.trim();
         if (value === "") {
@@ -86,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return true;
     }
 
-    // Función para validar la cantidad de residuos
+    // Función que valida la cantidad de residuos.
     function validateCantidad() {
         const value = cantidadRes.value.trim();
         if (value === "" || parseInt(value) < 1) {
@@ -96,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return true;
     }
 
-    // Función para validar el tipo de material
+    // Función que valida el tipo de residuo.
     function validateMaterial() {
         const value = material.value;
         if (value === "") {
@@ -106,12 +107,12 @@ document.addEventListener('DOMContentLoaded', function() {
         return true;
     }
 
-    // Función para mostrar mensajes de error
+    // Función que muestra el mensaje de error.
     function showError(message) {
         errorDiv.innerHTML = message;
     }
 
-    // Función para validar el formato de correo
+    // Función que valida el formato de correo.
     function validateEmail(email) {
         const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         return re.test(email);
